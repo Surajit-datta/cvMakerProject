@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+  <meta name="description" content="CV_generator">
+  <meta name="keywords" content="cvgenerator,CV, cvcreate,  cvmaker, cvwebapp,  cvmaking, website">
+  <meta name="author" content="Surajit Datta">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+*{
+padding:0px;
+margin:0px;
+box-sizing:border-box;
+
+}
+body{
+  background:#00001a;
+}
+nav{
+  height:100px;
+  width:100%;
+  background:#00001a;
+  font-size:30px;
+  
+  
+  
+}
+nav ul{
+  list-style:none;
+  color:white;
+  float:right;
+  line-height:100px;
+  margin-right:10px;
+  
+  
+}
+nav ul li{
+  display:inline-block ;
+  padding:3px;
+}
+
+#check{
+  display:none;
+}
+#checkbtn{
+  display:none;
+  line-height:70px;
+  padding-left:10px;
+  font-size:20px;
+  color:white;
+}
+#logo{
+  display:inline-block ;
+  line-height:100px;
+  padding-left:20px;
+  color:white;
+}
+#check:checked~ul {
+  left:-20%;
+
+}
+#about {
+  height: 600px;
+  width: 100%;
+  background: white;
+ 
+  
+}
+#row1{
+z-index:0;
+height:300px;
+width:100%;
+}
+#main{
+font-size:50px;
+}
+#main1{
+font-size:30px;
+}
+#about_site:before{
+content:"";
+position:absolute;
+height:2px;
+width:60%;
+background:maroon;
+bottom:0px;
+}
+#go{
+z-index:0;
+}
+#cv{
+height:150px;
+line-height:130px;
+}
+#cv_btn{
+height:130px;
+float:right;
+font-size:40px;
+border-radius:10%;
+}
+#main_cv{
+margin-top:100px;
+}
+#contact{
+border:1px solid white;
+}
+a{
+color:white;
+text-decoration:none;
+}
+#ho:hover{
+background:blue;
+
+}
+.vanish{
+animation:box 3s linear 1;
+}
+@keyframes box{
+0%{
+opacity:0;
+transform:translateY(-80px);
+}
+100%{
+opacity:1;
+}
+
+}
+
+
+@media(max-width:788px){
+   
+   #checkbtn{
+      display:block;
+   }
+   nav{
+     height:70px;
+     font-size:20px;
+    
+   }
+   nav ul{
+     width:100%;
+     height:10px;
+     position:absolute;
+     top:70px;
+     left:-100%;
+     transition:2s;
+     text-align:center;
+     z-index:2;
+   }
+   nav ul li{
+     display:block;
+     color:white;
+     background:#00001a;
+    
+     
+     
+   }
+#logo {
+  float:right;
+  position:absolute;
+  right:0px;
+  top:0px;
+  padding-right: 20px;
+  color: black;
+  color:white;
+}
+#about{
+  height: 300px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding-top: 20px;
+}
+#line{
+  line-height:00px;
+  font-size:20px;
+  margin-left:30px;
+}
+#main{
+font-size:30px;
+}
+#main1{
+font-size:20px;
+}
+#cv_btn{
+height:70px;
+float:right;
+font-size:30px;
+border-radius:10%;
+}
+#cv{
+height:70px;
+line-height:70px;
+font-size:30px;
+}
+
+
+}
+</style>
+</head>
+<body>
+ 
+ <nav>
+   
+   <input type="checkbox" id="check" name="" value="">
+   <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+   
+   <lebel id="logo">EXPLORE</lebel>
+   <ul style="transition:1s;">
+     <li style="transition:2s;"><i class="active" id="ho">HOME</i></li>
+     <li> <i id="ho"><a href="#go">ABOUT</a></i></li>
+     <li><i id="ho"><a href="#about_sit">CONTACT</a></i></li>
+     <li><i id="ho"><a href="#cv_btn">CV</a></i></li>
+     
+   </ul>
+</nav>
+ 
+ <div class="container-fluid vanish" id="go">
+  <div class="row justify-content-center" id="row1" style="min-height:400px;">
+   <div id="main" class="col1 col-xs-12 text-white align-self-center text-center col-sm-6">
+   <i id="about_site">ABOUT SITE</i>
+   </div>
+   <div id="main1" class="col2 col-xs-12 align-self-center text-center text-white col-sm-6">
+   "My vission is to provide free service to each and every students in their emergency time. So in emergency time they will create cv full of free. <u>This site is created for freshers and little experience student. We are working on experience CV.</u>
+   </div>
+  </div>
+ </div>
+ 
+ <!--create cv div start-->
+  <div class="container-fluid vanish" id="main_cv">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12" id="cv">
+          <a href="cv.html">
+           <div class="col-xs-4 col-sm-4  bg-danger text-center align-self-center" id="cv_btn">
+           CREATE CV
+           </div>
+          </a>
+      </div>
+    </div>
+   </div>
+ <!-- create cv div end-->
+ <!-- About me div start-->
+  <div class="container-fluid vanish" id="go">
+  <div class="row justify-content-center" id="row1" style="min-height:400px;">
+  <div id="main" class="col1 col-xs-12 text-white align-self-center text-center col-sm-6">
+  <i id="about_site">ABOUT ME</i>
+  </div>
+  <div id="main1" class="col2 col-xs-12 align-self-center text-center text-white col-sm-6">
+  Myself <u>"Surajit Datta,</u> Final year Btech mechanical student. i have created this site for project purpose along with helping the students to create CV for free. For any Enquiry plz feel free and contact me.
+  </div>
+  </div>
+  </div>
+ 
+ <!--about me div end-->
+  <!-- choose me did start-->
+  <div class="container-fluid vanish" id="go">
+  <div class="row justify-content-center" id="row1" style="min-height:400px;">
+  <div id="main" class="col1 col-xs-12 text-white align-self-center text-center col-sm-6">
+  <i id="about_site">"WHY YOU CHOOSE ME?</i>
+  
+  </div>
+  <div id="main1" class="col2 col-xs-12 align-self-center text-center text-white col-sm-6">
+   As a fresher i know lots of student are facing problem for CV and they dont have good device to create CV. So,  i am representing free website to generate CV.</i>
+  </div>
+  </div>
+  </div>
+  
+  <!--choose me div end-->
+  <!--contact us start-->
+  
+  <div class="container-fluid" id="go">
+  <div class="row justify-content-center" id="row1" style="min-height:400px;">
+  <div id="main" class="col1 col-xs-12 text-white align-self-center text-center col-sm-6">
+  <i id="about_sit">
+  <a href="https://www.facebook.com/surajit.datta.33886"><i class="fa-brands fa-facebook"></i></a>&emsp;
+  <a href="https://www.linkedin.com/in/surajit-datta-751600155"><i class="fa-brands fa-linkedin"></i></a>&emsp;
+  <a href="https://www.instagram.com/invites/contact/?i=1roh3c0otxyh8&utm_content=2ldjhzs"><i class="fa-brands fa-square-instagram"></i></a>
+  </i>
+  
+  </div>
+  <div id="main1" class="col2 col-xs-12 align-self-center text-center text-white col-sm-6">
+  Mail me : <a href="mailto:surajitbubul47@gmail.com">Send Email</a>
+  </div>
+  </div>
+  </div>
+  <!--contact us-->
+
+
+</body>
+</html>

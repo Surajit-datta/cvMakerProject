@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>project first animation</title>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="3; url='resume_front.html'">
+<meta name="description" content="CV_generator">
+<meta name="keywords" content="cvgenerator,CV, cvcreate,  cvmaker, cvwebapp,  cvmaking, website">
+<meta name="author" content="Surajit Datta">
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+body{
+background:#00008B;
+}
+#box{
+height:150px;
+width:600px;
+border:1px solid black;
+box-shadow:0px 5px 5px 5px;
+text-align:center;
+transform:translate(-50%,-50%);
+position:absolute;
+top:50%;
+left:50%;
+overflow:hidden;
+}
+b{
+color:white;
+font-size:40px;
+line-height:150px;
+
+}
+#box span:nth-child(1){
+position:absolute;
+top:0px;
+left:0px;
+height:2px;
+width:100%;
+background:linear-gradient(to right, grey, white);
+animation:upper 2s linear infinite;
+}
+
+@keyframes upper{
+0%{
+left:-100%;
+
+}
+50%{
+left:50%;
+}
+100%{
+left:100%;
+}
+}
+
+#box span:nth-child(2){
+height:150px;
+width:2px;
+background:linear-gradient(to bottom,grey,white);
+position:absolute;
+right:0px;
+top:0px;
+animation:right 2s linear infinite;
+}
+
+@keyframes right{
+0%{
+top:-100%;
+
+}
+50%{
+top:50%;
+}
+100%{
+top:100%;
+}
+}
+
+#box span:nth-child(3){
+height:2px;
+width:100%;
+background:linear-gradient(to left,grey,white);
+position:absolute;
+right:0px;
+bottom:0px;
+animation:bottom 2s linear infinite;
+}
+
+@keyframes bottom{
+0%{
+right:-100%;
+
+}
+50%{
+right:50%;
+}
+100%{
+right:100%;
+}
+}
+#box span:nth-child(4){
+height:150px;
+width:2px;
+background:linear-gradient(to top,grey,white);
+position:absolute;
+left:0px;
+bottom:0px;
+animation:left 2s linear infinite;
+}
+
+@keyframes left{
+0%{
+bottom:-100%;
+
+}
+50%{
+bottom:50%;
+}
+100%{
+bottom:100%;
+}
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+<div id="box">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<b>CREATE CV</b>
+</div>
+
+
+</body>
+</html>
